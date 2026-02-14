@@ -7,6 +7,7 @@ A personal collection of [Claude Code](https://docs.anthropic.com/en/docs/claude
 | Plugin | Description |
 |--------|-------------|
 | [zed-notify](plugins/zed-notify) | macOS notifications for Claude Code events with smart suppression when Zed is focused |
+| [skill-creator](plugins/skill-creator) | Guides Claude through creating effective skills following Anthropic's official best practices |
 
 ## zed-notify
 
@@ -31,6 +32,30 @@ Native macOS notifications when Claude Code needs your attention — task comple
 - macOS
 - [terminal-notifier](https://github.com/julienXX/terminal-notifier) (recommended): `brew install terminal-notifier`
 - Accessibility permission for Zed focus detection (optional, suppression degrades gracefully)
+
+## skill-creator
+
+Guides Claude through creating effective skills for Claude Code, following Anthropic's official best practices for skill authoring.
+
+**What it does:**
+
+- Walks through a structured creation process: understand usage, plan resources, create structure, write skill, validate
+- Enforces progressive disclosure (metadata → SKILL.md → references) to manage context efficiently
+- Produces skills with proper frontmatter, trigger descriptions, and bundled resources
+
+**Key guidance areas:**
+
+- **Naming** — gerund form preferred (`processing-pdfs`, `analyzing-data`)
+- **Descriptions** — third person, specific trigger phrases, concrete scenarios
+- **Content** — imperative writing style, only what Claude doesn't already know
+- **Structure** — SKILL.md under 500 lines, detailed content in `references/`
+- **Validation** — checklist covering structure, content quality, and progressive disclosure
+
+**Includes reference material on:**
+
+- Best practices for progressive disclosure, workflow design, and anti-patterns
+- Claude Code skill features (frontmatter, subagents, dynamic context, arguments)
+- Evaluation-driven development and testing across models
 
 ## Installing a plugin
 
