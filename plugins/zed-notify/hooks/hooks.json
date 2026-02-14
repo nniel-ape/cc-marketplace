@@ -1,0 +1,32 @@
+{
+  "description": "macOS notifications for Stop, Permission, Idle, and Input Required events",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/notify.sh" }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/notify.sh", "timeout": 5 }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/notify.sh", "timeout": 5 }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/notify.sh", "timeout": 5 }
+        ]
+      }
+    ]
+  }
+}

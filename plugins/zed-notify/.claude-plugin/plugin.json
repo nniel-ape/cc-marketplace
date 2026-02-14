@@ -1,0 +1,8 @@
+{
+  "name": "zed-notify",
+  "description": "macOS notifications for Claude Code events via terminal-notifier, with smart suppression when the project's Zed window is focused",
+  "version": "1.0.0",
+  "author": {
+    "name": "andrey"
+  }
+}
