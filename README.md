@@ -35,11 +35,11 @@ Native macOS notifications when Claude Code needs your attention — task comple
 ## Installing a plugin
 
 ```bash
-claude plugin add /path/to/cc-marketplace/plugins/<plugin-name>
+claude plugin add github:nniel-ape/cc-marketplace/plugins/<plugin-name>
 ```
 
-Or if you've cloned this repo:
+For example:
 
 ```bash
-claude plugin add ~/Projects/cc-marketplace/plugins/zed-notify
+claude plugin add github:nniel-ape/cc-marketplace/plugins/zed-notify
 ```
