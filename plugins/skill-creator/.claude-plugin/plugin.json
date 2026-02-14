@@ -1,0 +1,8 @@
+{
+  "name": "skill-creator",
+  "description": "Guides Claude through creating effective skills for Claude Code, following Anthropic's official skill authoring best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "andrey"
+  }
+}
