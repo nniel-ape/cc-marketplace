@@ -8,5 +8,18 @@
     "version": "0.1.0",
     "pluginRoot": "./plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "skill-creator",
+      "description": "Guides Claude through creating effective skills for Claude Code, following Anthropic's official skill authoring best practices",
+      "version": "1.0.0",
+      "path": "./plugins/skill-creator"
+    },
+    {
+      "name": "zed-notify",
+      "description": "macOS notifications for Claude Code events via terminal-notifier, with smart suppression when the project's Zed window is focused",
+      "version": "1.0.0",
+      "path": "./plugins/zed-notify"
+    }
+  ]
 }
