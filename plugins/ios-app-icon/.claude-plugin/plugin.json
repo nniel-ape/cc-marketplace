@@ -1,0 +1,8 @@
+{
+  "name": "ios-app-icon",
+  "description": "Generates iOS app icons from SVG files using rsvg-convert, supporting modern single-size (Xcode 14+), dark/tinted variants (iOS 18), and legacy all-sizes modes",
+  "version": "1.0.0",
+  "author": {
+    "name": "andrey"
+  }
+}
